@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-black">
+    <footer className="border-t border-white/10 bg-surface">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-2">
           <Image src="/brand/mark-icon-white.png" alt="The Mark UChicago" width={28} height={34} />

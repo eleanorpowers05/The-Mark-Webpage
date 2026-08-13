@@ -58,16 +58,16 @@ const team: { name: string; role: string }[] = [];
 export default function About() {
   return (
     <>
-      <section className="mx-auto max-w-3xl px-6 py-24 text-center">
+      <section className="bg-gradient-to-b from-black to-navy px-6 py-24 text-center">
         <h1 className="text-4xl font-bold sm:text-5xl">About The Mark</h1>
-        <p className="mt-6 text-lg text-white/70">
+        <p className="mx-auto mt-6 max-w-3xl text-lg text-white/70">
           Our vision is to grow the on-campus marketing community across a variety
           of majors and career interests.
         </p>
       </section>
 
-      <section className="mx-auto max-w-5xl px-6 py-16">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-stretch">
+      <section className="bg-gradient-to-b from-navy to-black px-6 py-16">
+        <div className="mx-auto flex max-w-5xl flex-col gap-6 sm:flex-row sm:items-stretch">
           {pillars.flatMap((pillar, i) => {
             const card = (
               <div
@@ -108,7 +108,7 @@ export default function About() {
               return (
                 <div
                   key={value.name}
-                  className="group rounded-2xl border border-white/10 bg-black/40 p-6 transition-colors hover:border-mark-blue/50"
+                  className="group rounded-2xl border border-white/10 bg-surface/60 p-6 transition-colors hover:border-mark-blue/50"
                 >
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-mark-blue/10 text-mark-blue transition-colors group-hover:bg-mark-blue/20">
                     <Icon />

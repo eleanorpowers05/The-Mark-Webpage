@@ -17,16 +17,16 @@ const services = [
 export default function Services() {
   return (
     <>
-      <section className="mx-auto max-w-3xl px-6 py-24 text-center">
+      <section className="bg-gradient-to-b from-black to-navy px-6 py-24 text-center">
         <h1 className="text-4xl font-bold sm:text-5xl">Our Services</h1>
-        <p className="mt-6 text-lg text-white/70">
+        <p className="mx-auto mt-6 max-w-3xl text-lg text-white/70">
           We put empathy first. As we develop close relationships with our clients,
           we go above and beyond to determine what is best for their brand and business.
         </p>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <section className="bg-gradient-to-b from-navy to-black px-6 pb-24">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.name}
