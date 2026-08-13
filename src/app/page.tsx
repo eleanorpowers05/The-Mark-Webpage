@@ -73,6 +73,7 @@ export default function Home() {
           We provide professional marketing services to businesses across the country
           and support students in their exploration of the industry.
         </p>
+        <div className="mx-auto mt-10 h-px w-16 bg-mark-blue/60" />
       </section>
 
       {/* Services preview */}
