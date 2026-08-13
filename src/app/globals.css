@@ -33,3 +33,18 @@ body {
   color: #ffffff;
   font-family: var(--font-sans), Helvetica, Arial, sans-serif;
 }
+
+/* Hero ambient glow — the only ambient motion on the site. */
+.hero-glow {
+  background-image: var(--gradient-hero-glow);
+  animation: hero-glow-drift 30s var(--ease-brand) infinite;
+}
+
+@keyframes hero-glow-drift {
+  0%, 100% { background-position: 0% 0%; }
+  50% { background-position: 4% 3%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-glow { animation: none; }
+}
