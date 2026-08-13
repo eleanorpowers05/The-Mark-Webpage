@@ -26,7 +26,7 @@ export default function Home() {
           priority
           className="object-cover opacity-70"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-[#103450]" />
 
         <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
           <h1 className="text-5xl font-bold tracking-tight sm:text-7xl">
@@ -53,7 +53,7 @@ export default function Home() {
       </section>
 
       {/* Stats */}
-      <section className="border-y border-white/10 bg-black">
+      <section className="border-b border-white/10 bg-gradient-to-b from-[#103450] to-black">
         <div className="mx-auto grid max-w-4xl grid-cols-3 gap-6 px-6 py-14 text-center">
           {stats.map((stat) => (
             <div key={stat.label}>
